@@ -58,6 +58,9 @@ echo "-----> Installing Dependencies..."
 $CONDA_BIN/conda update --yes --quiet conda
 $CONDA_BIN/conda install --yes --quiet pip
 
+echo "-----> Installing no mkl..."
+$CONDA_BIN/conda install --yes --quiet nomkl
+
 # Default Conda env is root
 CONDA_ENV="root"
 # First check if environment.yml exists and if so use with conda-env
